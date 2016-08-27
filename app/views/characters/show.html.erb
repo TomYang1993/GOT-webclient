@@ -1,0 +1,17 @@
+<h1>Here is the Character !</h1>
+
+
+
+<h2><%= @character.id %><span>  </span><%= @character.house %></h2>
+
+<li><%= @character.name %></li>
+
+<li><%= @character.city %></li>
+<br>
+
+
+<button><%= link_to  "update the character","/characters/#{@character.id}/edit" ,method: :get%></button>
+
+<br>
+
+<button><%= link_to  "delete the character","/characters/#{@character.id}" ,method: :delete%></button>

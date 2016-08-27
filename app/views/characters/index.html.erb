@@ -1,0 +1,11 @@
+<h1>Here is the Home Page !</h1>
+
+<% @characters.each do |character| %>
+
+<h2><%= character.id %><span>  </span><%= character.house %></h2>
+
+<li><%= character.name %></li>
+
+<li><%= character.city %></li>
+<br>
+<% end %>

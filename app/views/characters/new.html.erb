@@ -1,0 +1,14 @@
+<h2> HaHa, let's create a character!  </h2>
+
+<%= form_tag("/characters", method: :post) do %>
+<li><%= label_tag(:name) %></li>
+<li><%= text_field_tag(:name) %></li>
+<li><%= label_tag(:house) %></li>
+<li><%= text_field_tag(:house) %></li>
+<li><%= label_tag(:city) %></li>
+<li><%= text_field_tag(:city) %></li>
+<br>
+<div>
+<%= submit_tag("create!") %>
+</div>
+<% end %>
